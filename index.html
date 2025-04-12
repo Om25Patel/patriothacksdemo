@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link href="style.css" rel="stylesheet">
+  <style>
+    
+  </style>
+</head>
+<body>
+  <header>
+    <a href="#" class="logo">Logo here?</a>
+    <ul>
+      <li><a href="#" class="active">Home</a></li>
+      <li><a href="#">PatriotHacks</a></li>
+      <li><a href="#">idk</a></li>
+      <li><a href="#">idk</a></li>
+    </ul>
+  </header>
+
+  <section>
+    <img src="stars.png" id="stars" />
+    <img id="moon" />
+    <img src="peron.png" id="mountains_behind" />
+    <h2 id="phr">HOHOHO</h2>
+    
+    <h2 id="text" style="position: absolute; font-size: 3em; color: white;">PATRIOTHACKS</h2>
+    <a href="#sec" id="btn">Register!!</a>
+    <img src="gpt.png" id="mountains_front" />
+  </section>
+
+  <div class="sec" id="sec">
+    <h2>Additional info...</h2>
+    <p>MORE STUFF BELOW.....</p>
+  </div>
+
+  <script>
+    let stars = document.getElementById('stars');
+    let moon = document.getElementById('moon');
+    let mountains_behind = document.getElementById('mountains_behind');
+    let text = document.getElementById('text');
+    let btn = document.getElementById('btn');
+    let mountains_front = document.getElementById('mountains_front');
+    let header = document.querySelector('header');
+
+    window.addEventListener('scroll', function () {
+      let value = window.scrollY;
+      stars.style.left = value * 0.25 + 'px';
+      moon.style.top = value * 1.05 + 'px';
+      mountains_behind.style.top = value * 0.5 + 'px';
+      mountains_front.style.top = value * 0 + 'px';
+      text.style.marginRight = value * 4 + 'px';
+      text.style.marginTop = value * 1.5 + 'px';
+      btn.style.marginTop = value * 1.5 + 'px';
+      header.style.top = value * 0.5 + 'px';
+    });
+  </script>
+</body>
+</html>
