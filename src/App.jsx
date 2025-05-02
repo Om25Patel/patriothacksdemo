@@ -55,8 +55,6 @@ const App = () => {
       if (btn) {
         btn.style.marginTop = value * 1.5 + "px";
       }
-
-      
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -77,7 +75,7 @@ const App = () => {
             </a>
           </li>
           <li>
-            <a href="#" className="nav-venus">
+            <a href="#mission" className="nav-venus">
               <span>Mission</span>
             </a>
           </li>
@@ -120,9 +118,12 @@ const App = () => {
         <img src="/images/peron.png" id="stars_beh" alt="Background Stars" />
   
 
-        <div className="event-heading font-bold">
-          <h2 id="text" className="text-[9rem] max-[1125px]:text-[5rem] max-[660px]:text-[3.5rem] max-[460px]:text-[2.75rem] transition-[font-size] duration-300 ease-in-out bg-gradient-to-r from-[#8E7DBE] from-5% to-[#FF8282] to-90% opacity-[0.8] bg-clip-text text-transparent">PATRIOTHACKS</h2>
-          <h3 id="date" className="bg-gradient-to-r from-[#E6E6FA] from-5% to-[#a8458e] to-90% opacity-[0.8] bg-clip-text text-transparent">October 10–12 2025</h3>
+        <div className="event-heading font-bold pb-5">
+          <h2 id="text" className="text-[5rem] max-[1125px]:text-[5rem] max-[660px]:text-[3.5rem] max-[460px]:text-[2.75rem] transition-[font-size] duration-300 ease-in-out bg-gradient-to-r from-[#8E7DBE] from-5% to-[#FF8282] to-90% opacity-[0.8] bg-clip-text text-transparent">PATRIOTHACKS</h2>
+          <div className="flex flex-col gap-4">
+            <h3 id="text" className="bg-gradient-to-r from-[#E6E6FA] from-5% to-[#a8458e] to-90% opacity-[0.8] bg-clip-text text-transparent">George Mason University's seventh annual flagship hackathon</h3>
+            <h3 id="date" className="bg-gradient-to-r from-[#E6E6FA] from-5% to-[#a8458e] to-90% opacity-[0.8] bg-clip-text text-transparent">October 10–12 2025</h3>
+          </div>
         </div>
 
         <div className="countdown-wrapper">
@@ -156,9 +157,17 @@ const App = () => {
               Interested? Enter your email to be updated!
             </label>
             <div className="email-bar">
+              <input type="hidden" name="fvv" value="1" />
+              <input type="hidden" name="draftResponse" value="[],\n" />
+              <input type="hidden" name="pageHistory" value="0" />
+              <input
+                type="hidden"
+                name="fbzx"
+                value="6311012460564303453"
+              />
               <input
                 type="email"
-                name="entry.1423941202"
+                name="entry.1317488266"
                 id="email"
                 placeholder="Your email"
                 required
@@ -174,10 +183,47 @@ const App = () => {
       <section className="mission" id="mission">
         <div className="mission-content">
           <h2>Our Mission</h2>
-          <p>At PatriotHacks, our mission is to.....</p>
-          <p>More content ...</p>
+          <p>PatriotHacks is the flagship hackathon at George Mason University where innovators can play, learn, create, game, and revolutionize technology.</p>
+
+          <p>Students from across the world can enjoy plenty of workshops, activities, and networking events along with free swag. This provides hackers an opportunity to build their resumes and make memories that will last a lifetime. The event is entirely free and no experience is required to attend.</p>    
         </div>
+
+       
+        <div className="mt-6 flex justify-center">
+        {/* scrollable wrapper */}
+        <div className="
+            overflow-x-auto    /* horizontal scroll */
+            overflow-y-hidden  /* no vertical scroll */
+            max-w-full         /* don’t exceed parent width */
+            h-32               /* clip at 8rem tall */
+            border border-gray-300 rounded-lg shadow-lg
+            px-4 py-2
+          ">
+          <div className="flex flex-nowrap gap-4 h-full">
+            {[
+              "../public/images/people_in_the_mix.JPG",
+              "../public/images/Lunch.JPG",
+              "../public/images/salesforce_ws.jpg",
+              // …etc
+            ].map((src, i) => (
+              <img
+                key={i}
+                src={src}
+                className="
+                  w-48        
+                  h-full        
+                  object-cover
+                  rounded-md
+                "
+                alt={`slide-${i}`}
+              />
+            ))}
+          </div>
+        </div>
+      </div>
+
       </section>
+
 
     </div>
   );
