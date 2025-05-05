@@ -1,5 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { AlignJustify } from "lucide-react";
+import Footer from "../components/Footer";
+import { RxLinkedinLogo } from "react-icons/rx";
+import { FaInstagram } from "react-icons/fa";
 
 const App = () => {
   const [time, setTime] = useState({
@@ -62,7 +65,8 @@ const App = () => {
   }, []);
 
   return (
-    <div >
+    <>
+    <div className="relative min-h-screen">
       <header className="">
         <a href="#" className="logo">
           Logo
@@ -121,7 +125,7 @@ const App = () => {
         <div className="event-heading font-bold pb-5">
           <h2 id="text" className="text-[5rem] max-[1125px]:text-[5rem] max-[660px]:text-[3.5rem] max-[460px]:text-[2.75rem] transition-[font-size] duration-300 ease-in-out bg-gradient-to-r from-[#8E7DBE] from-5% to-[#FF8282] to-90% opacity-[0.8] bg-clip-text text-transparent">PATRIOTHACKS</h2>
           <div className="flex flex-col gap-4">
-            <h3 id="text" className="bg-gradient-to-r from-[#E6E6FA] from-5% to-[#a8458e] to-90% opacity-[0.8] bg-clip-text text-transparent">George Mason University's seventh annual flagship hackathon</h3>
+            <h3 className="bg-gradient-to-r from-[#E6E6FA] from-5% to-[#a8458e] to-90% opacity-[0.8] bg-clip-text text-transparent leading-[1.3]">George Mason University's seventh annual flagship hackathon</h3>
             <h3 id="date" className="bg-gradient-to-r from-[#E6E6FA] from-5% to-[#a8458e] to-90% opacity-[0.8] bg-clip-text text-transparent">October 10–12 2025</h3>
           </div>
         </div>
@@ -181,15 +185,15 @@ const App = () => {
       </section>
 
       <section className="mission" id="mission">
-        <div className="mission-content">
+        <div className="mission-content z-100">
           <h2>Our Mission</h2>
           <p>PatriotHacks is the flagship hackathon at George Mason University where innovators can play, learn, create, game, and revolutionize technology.</p>
 
           <p>Students from across the world can enjoy plenty of workshops, activities, and networking events along with free swag. This provides hackers an opportunity to build their resumes and make memories that will last a lifetime. The event is entirely free and no experience is required to attend.</p>    
         </div>
 
-       
-        <div className="mt-6 flex justify-center">
+       {
+        <div className="mt-6 flex justify-center opacity-10">
         {/* scrollable wrapper */}
         <div className="
             overflow-x-auto    /* horizontal scroll */
@@ -198,6 +202,7 @@ const App = () => {
             h-32               /* clip at 8rem tall */
             border border-gray-300 rounded-lg shadow-lg
             px-4 py-2
+            
           ">
           <div className="flex flex-nowrap gap-4 h-full">
             {[
@@ -220,12 +225,14 @@ const App = () => {
             ))}
           </div>
         </div>
-      </div>
+      </div>}
 
       </section>
 
-
+      <Footer/>
     </div>
+    
+    </>
   );
 };
 

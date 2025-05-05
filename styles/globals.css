@@ -369,7 +369,7 @@ section img#stars_beh {
 
 .mission-content p {
   font-size: 1.1em;
-  margin-bottom: 15px;
+  margin-bottom: 0px;
   line-height: 1.6;
   text-align: left !important;
 }
@@ -387,8 +387,8 @@ section img#stars_beh {
 .event-heading h2,
 .event-heading h3 {
   margin: 0;
-  padding: 0;
-  line-height: 1;
+ 
+  
 }
 
 .event-heading h2{
