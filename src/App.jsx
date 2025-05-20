@@ -260,7 +260,7 @@ const App = () => {
           <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-10 items-center">
             <div className="relative rounded-lg overflow-hidden shadow-lg h-[300px] md:h-[400px]">
               <img
-                src="/public/images/salesforce_ws.JPG"
+                src="/images/salesforce_ws.JPG"
                 alt="PatriotHacks community"
                 className="w-full h-full object-cover z-0 relative"
               />
