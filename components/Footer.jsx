@@ -41,7 +41,7 @@ function Footer() {
     <div className="max-[900px]:flex-col flex items-center justify-between w-full mt-2 text-center max-[450px]:px-16">
       <div className="">
         <span className="text-white text-sm w-full">Interested in sponsoring us? Please fill out </span>
-        <a href="https://docs.google.com/forms/d/e/1FAIpQLSexWEghOafLrVeLYZOT7wnGxBQEsE5aH_Seby-MCeX5iLjTwQ/viewform?usp=sf_link" className="text-white text-sm underline">this form</a>
+        <a href="https://forms.gle/ZKbJChyVcaoTRD3R8" className="text-white text-sm underline">this form</a>
       </div>
       <div className="">
         <span className="text-white text-sm w-full">Or Get in Touch: </span>
