@@ -16,6 +16,9 @@ html {
   height: 100vh;
   scrollbar-width: none;
   scroll-behavior: smooth;
+  overscroll-behavior: none;
+  /* For iOS Safari: */
+  
 }
 
 ::-webkit-scrollbar-button {
@@ -36,18 +39,25 @@ body::-webkit-scrollbar, body::-webkit-scrollbar-button {
   display: none; 
 }
 
+html, body {
+  background: linear-gradient(#2b1055, #1c0522);
+  overscroll-behavior: none;
+  /* For iOS Safari: */
+  background-color: #2b1055;
+}
+
 /* NAVBAR */
 
 header {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  padding: 30px 100px;
+  padding: 0px 100px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  z-index: 150;
+
   transition: padding 0.4s ease;
 }
 
@@ -245,7 +255,7 @@ section::before {
   width: 100%;
   height: 100px;
   background: linear-gradient(to top, #1c0522, transparent);
-  z-index: 1000;
+  z-index: 500;
 }
 
 section img {
@@ -312,13 +322,22 @@ section img#stars_beh {
   justify-content: center;
 }
 
+.time {
+  width: 90px;
+  height: 75px;
+  background-color: #8c46a165;
+  border-radius: 8px;
+}
+
 .time h2 {
   font-size: 2.5rem;
   font-weight: 500;
-  padding: 8px 16px;
-  background-color: #8c46a165;
+  padding: 8px 0px;
+  
+  text-align: center;
+  
   color: white;
-  border-radius: 8px;
+
   font-family: "Poppins", monospace;
 }
 

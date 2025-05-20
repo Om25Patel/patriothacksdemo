@@ -5,7 +5,7 @@ import { FaInstagram } from "react-icons/fa6";
 import { FaSquareXTwitter } from "react-icons/fa6";
 function Footer() {
   return (
-    <footer className="gap-y-4 py-8 opacity-80 w-full bg-gradient-to-r from-[#571c52] from-5% to-[#291f64] to-90% flex items-center justify-center">
+    <footer className="gap-y-4 py-8 opacity-100 w-full bg-gradient-to-r from-[#571c52] from-5% to-[#291f64] to-90% flex items-center justify-center">
     <div className="w-[780px]">
     <div className="max-[900px]:flex-col flex items-center justify-between">
     <div className="flex flex-row gap-2">
@@ -47,6 +47,13 @@ function Footer() {
         <span className="text-white text-sm w-full">Or Get in Touch: </span>
         <a href="mailto:patriothacksgmu@gmail.com" className="text-white text-sm underline">patriothacksgmu@gmail.com</a>
       </div>
+    </div>
+    <div className=" flex-center w-full mt-2 max-[900px]:text-center max-[450px]:px-16">
+      
+      <a href="https://github.com/MLH/mlh-policies/blob/main/code-of-conduct.md" 
+      target="_blank"
+      rel="noopener noreferrer"
+      className="text-white text-sm underline">MLH Code of Conduct</a>
     </div>
     </div>
     </footer>

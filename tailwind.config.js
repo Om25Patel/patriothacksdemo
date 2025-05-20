@@ -38,6 +38,10 @@ theme: {
 			arial: [
 				'Arial',
 				'sans-serif'
+			],
+			righteous: [
+				'Righteous',
+				'sans-serif'
 			]
 		},
 
